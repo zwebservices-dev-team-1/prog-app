@@ -1,0 +1,206 @@
+[class^="icon_"],
+[class*=" icon_"] {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  height: 32px;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  width: 32px;
+}
+
+.icon-medium {
+  height: 48px;
+  width: 48px;
+}
+
+.icon-large {
+  height: 80px;
+  width: 80px;
+}
+
+
+//clouds
+.icon_weather_clouds {
+  background-image: url('./project_media/common/img/icons/icon_weather_clouds.svg');
+  &.icon-white {
+    background-image: url('./project_media/common/img/icons/icon_weather_clouds_white.svg');
+  }
+  &.icon-yellow {
+    background-image: url('./project_media/common/img/icons/icon_weather_clouds_yellow.svg');
+  }
+}
+.icon_weather_dust {
+  background-image: url('./project_media/common/img/icons/icon_weather_dust.svg');
+  &.icon-white {
+    background-image: url('./project_media/common/img/icons/icon_weather_dust_white.svg');
+  }
+  &.icon-yellow {
+    background-image: url('./project_media/common/img/icons/icon_weather_dust_yellow.svg');
+  }
+}
+.icon_weather_smoke {
+  background-image: url('./project_media/common/img/icons/icon_weather_smoke.svg');
+  &.icon-white {
+    background-image: url('./project_media/common/img/icons/icon_weather_smoke_white.svg');
+  }
+  &.icon-yellow {
+    background-image: url('./project_media/common/img/icons/icon_weather_smoke_yellow.svg');
+  }
+}
+.icon_weather_smoke {
+  background-image: url('./project_media/common/img/icons/icon_weather_smoke.svg');
+  &.icon-white {
+    background-image: url('./project_media/common/img/icons/icon_weather_smoke_white.svg');
+  }
+  &.icon-yellow {
+    background-image: url('./project_media/common/img/icons/icon_weather_smoke_yellow.svg');
+  }
+}
+
+
+//fog
+.icon_weather_haze {
+  background-image: url('./project_media/common/img/icons/icon_weather_haze.svg');
+  &.icon-white {
+    background-image: url('./project_media/common/img/icons/icon_weather_haze_white.svg');
+  }
+  &.icon-yellow {
+    background-image: url('./project_media/common/img/icons/icon_weather_haze_yellow.svg');
+  }
+}
+.icon_weather_fog {
+  background-image: url('./project_media/common/img/icons/icon_weather_fog.svg');
+  &.icon-white {
+    background-image: url('./project_media/common/img/icons/icon_weather_fog_white.svg');
+  }
+  &.icon-yellow {
+    background-image: url('./project_media/common/img/icons/icon_weather_fog_yellow.svg');
+  }
+}
+
+
+//rain
+.icon_weather_rain {
+  background-image: url('./project_media/common/img/icons/icon_weather_rain.svg');
+  &.icon-white {
+    background-image: url('./project_media/common/img/icons/icon_weather_rain_white.svg');
+  }
+  &.icon-yellow {
+    background-image: url('./project_media/common/img/icons/icon_weather_rain_yellow.svg');
+  }
+}
+.icon_weather_flood {
+  background-image: url('./project_media/common/img/icons/icon_weather_flood.svg');
+  &.icon-white {
+    background-image: url('./project_media/common/img/icons/icon_weather_flood_white.svg');
+  }
+  &.icon-yellow {
+    background-image: url('./project_media/common/img/icons/icon_weather_flood_yellow.svg');
+  }
+}
+.icon_weather_sleet {
+  background-image: url('./project_media/common/img/icons/icon_weather_sleet.svg');
+  &.icon-white {
+    background-image: url('./project_media/common/img/icons/icon_weather_sleet_white.svg');
+  }
+  &.icon-yellow {
+    background-image: url('./project_media/common/img/icons/icon_weather_sleet_yellow.svg');
+  }
+}
+.icon_weather_hurricane {
+  background-image: url('./project_media/common/img/icons/icon_weather_hurricane.svg');
+  &.icon-white {
+    background-image: url('./project_media/common/img/icons/icon_weather_hurricane_white.svg');
+  }
+  &.icon-yellow {
+    background-image: url('./project_media/common/img/icons/icon_weather_hurricane_yellow.svg');
+  }
+}
+.icon_weather_tornado {
+  background-image: url('./project_media/common/img/icons/icon_weather_tornado.svg');
+  &.icon-white {
+    background-image: url('./project_media/common/img/icons/icon_weather_tornado_white.svg');
+  }
+  &.icon-yellow {
+    background-image: url('./project_media/common/img/icons/icon_weather_tornado_yellow.svg');
+  }
+}
+
+.icon_weather_lightrain {
+  background-image: url('./project_media/common/img/icons/icon_weather_lightrain.svg');
+  &.icon-white {
+    background-image: url('./project_media/common/img/icons/icon_weather_lightrain_white.svg');
+  }
+  &.icon-yellow {
+    background-image: url('./project_media/common/img/icons/icon_weather_lightrain_yellow.svg');
+  }
+}
+.icon_weather_tstorm {
+  background-image: url('./project_media/common/img/icons/icon_weather_tstorm.svg');
+  &.icon-white {
+    background-image: url('./project_media/common/img/icons/icon_weather_tstorm_white.svg');
+  }
+  &.icon-yellow {
+    background-image: url('./project_media/common/img/icons/icon_weather_tstorm_yellow.svg');
+  }
+}
+.icon_weather_hail {
+  background-image: url('./project_media/common/img/icons/icon_weather_hail.svg');
+  &.icon-white {
+    background-image: url('./project_media/common/img/icons/icon_weather_hail_white.svg');
+  }
+  &.icon-yellow {
+    background-image: url('./project_media/common/img/icons/icon_weather_hail_yellow.svg');
+  }
+}
+
+//sunny
+.icon_weather_sunny {
+  background-image: url('./project_media/common/img/icons/icon_weather_sunny.svg');
+  &.icon-white {
+    background-image: url('./project_media/common/img/icons/icon_weather_sunny_white.svg');
+  }
+  &.icon-yellow {
+    background-image: url('./project_media/common/img/icons/icon_weather_sunny_yellow.svg');
+  }
+}
+
+//snow
+.icon_weather_icy {
+  background-image: url('./project_media/common/img/icons/icon_weather_icy.svg');
+  &.icon-white {
+    background-image: url('./project_media/common/img/icons/icon_weather_icy_white.svg');
+  }
+  &.icon-yellow {
+    background-image: url('./project_media/common/img/icons/icon_weather_icy_yellow.svg');
+  }
+}
+.icon_weather_snow {
+  background-image: url('./project_media/common/img/icons/icon_weather_snow.svg');
+  &.icon-white {
+    background-image: url('./project_media/common/img/icons/icon_weather_snow_white.svg');
+  }
+  &.icon-yellow {
+    background-image: url('./project_media/common/img/icons/icon_weather_snow_yellow.svg');
+  }
+}
+.icon_weather_blizzard {
+  background-image: url('./project_media/common/img/icons/icon_weather_blizzard.svg');
+  &.icon-white {
+    background-image: url('./project_media/common/img/icons/icon_weather_blizzard_white.svg');
+  }
+  &.icon-yellow {
+    background-image: url('./project_media/common/img/icons/icon_weather_blizzard_yellow.svg');
+  }
+}
+.icon_weather_flurries {
+  background-image: url('./project_media/common/img/icons/icon_weather_flurries.svg');
+  &.icon-white {
+    background-image: url('./project_media/common/img/icons/icon_weather_flurries_white.svg');
+  }
+  &.icon-yellow {
+    background-image: url('./project_media/common/img/icons/icon_weather_flurries_yellow.svg');
+  }
+}

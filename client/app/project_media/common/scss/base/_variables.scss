@@ -1,0 +1,78 @@
+/*
+* Bootstrap grid sizes
+*/
+$screen-xs: 375px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+
+$screen-sm-min: $screen-sm;
+$screen-md-min: $screen-md;
+$screen-lg-min: $screen-lg;
+
+
+//From bootstrap - In case you have to use it (not overwritten)
+$container-tablet: (720px + $grid-gutter-width) !default;
+$container-sm-default: $container-tablet !default;
+
+$container-desktop: (940px + $grid-gutter-width) !default;
+$container-md: $container-desktop !default;
+
+$container-large-desktop: (1140px + $grid-gutter-width) !default;
+$container-lg: $container-large-desktop !default;
+
+
+
+/*
+** Font sizes
+** Font-size has to be defined on html tag (14 as base)
+*/
+$small: .8571rem;      //12px
+$base: 1rem;           //14px
+$medium: 1.15rem;      //16px
+$large: 1.286rem;      //18px
+$x-large: 1.429rem;    //20px
+$xx-large: 1.857rem;   //24px
+$xxx-large: 2.571rem;  //36px
+$page-title: 5rem;     //70px
+
+
+/*
+* Fonts used
+*/
+$southwest-sans: 'Southwest-Sans', Helvetica, Arial, sans-serif;
+$basic: Helvetica, Arial, sans-serif;
+
+$swa-white: rgb(255, 255, 255);
+$swa-black: rgb(0, 0, 0);
+$swa-dark-blue: rgb(26, 44, 128);
+$swa-mid-blue: rgb(43, 52, 124);
+$swa-blue: rgb(48, 76, 178);
+$swa-yellow: rgb(255, 191, 39);
+$swa-red: rgb(213, 21, 46);
+$swa-gray: rgb(74, 74, 74);
+$swa-light-gray: rgb(216, 216, 216);
+$swa-smoke-gray: rgb(242, 242, 242);
+/*
+* Text colors
+*/
+$text-color: $swa-gray;
+$primary-color: $swa-blue;
+$bg-color: $swa-smoke-gray;
+
+/*
+* Border colors
+*/
+$border-color: rgba(0, 0, 0, .1);
+$swa-border-gray: rgb(183, 183, 183);
+
+/*
+* Box shadows used in the template
+*/
+$shadow: 0 3px 9px rgba(0, 0, 0, .175);
+$text-shadow: 0px 0px 30px rgba(0, 0, 0, .275);
+
+$swa-img-logo: url("project_media/common/img/modules/logo/swa-logo.png");
+$swa-img-logo-large: url("project_media/common/img/modules/logo/swa-logo-large.png");
+
+$swa-mobile-menu-width: 250px;

@@ -1,0 +1,112 @@
+/*--------------------
+$ PX TO REM $
+--------------------*/
+//usage: @include font-size(14px);
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+
+/*--------------------
+$ BREAKPOINT $
+--------------------*/
+//usage: @include bp-sm {}
+
+@mixin bp-xs {
+  @media screen and (min-width: $screen-xs) {
+    @content;
+  }
+}
+
+@mixin bp-sm {
+  @media screen and (min-width: $screen-sm-min) {
+    @content;
+  }
+}
+
+@mixin bp-md {
+  @media screen and (min-width: $screen-md-min) {
+    @content;
+  }
+}
+
+@mixin bp-lg {
+  @media screen and (min-width: $screen-lg-min) {
+    @content;
+  }
+}
+
+@mixin bp-ls {
+  @media screen and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin bp-pt {
+  @media screen and (orientation: portrait) {
+    @content;
+  }
+}
+
+/*--------------------
+$ RESOLUTION DEPENDENT MEDIA QUERY $
+--------------------*/
+//usage: @include hi-def {}
+
+@mixin hi-def {
+  @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+    @content;
+  }
+}
+
+
+/*--------------------
+$ KEYFRAMES $
+--------------------*/
+//usage: @include keyframes(slide-down) { 0% { opacity: 1; } 90% { opacity: 0; }}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+/*--------------------
+$ ANIMATION $
+--------------------*/
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+/*--------------------
+$ TRANSITIONS $
+--------------------*/
+//usage: @include transition(color .3s ease);
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}

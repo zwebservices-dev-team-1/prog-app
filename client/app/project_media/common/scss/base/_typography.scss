@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('project_media/common/fonts/fontawesome/fontawesome-webfont.eot?v=4.7.0');
+  src: url('project_media/common/fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+  url('project_media/common/fonts/fontawesome/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+  url('project_media/common/fonts/fontawesome/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+  url('project_media/common/fonts/fontawesome/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+  url('project_media/common/fonts/fontawesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fontello';
+  font-style: normal;
+  font-weight: normal;
+  src: url('project_media/common/fonts/fontello/fontello.eot?49710509');
+  src: url('project_media/common/fonts/fontello/fontello.eot?49710509#iefix') format('embedded-opentype'),
+  url('project_media/common/fonts/fontello/fontello.woff2?49710509') format('woff2'),
+  url('project_media/common/fonts/fontello/fontello.woff?49710509') format('woff'),
+  url('project_media/common/fonts/fontello/fontello.ttf?49710509') format('truetype'),
+  url('project_media/common/fonts/fontello/fontello.svg?49710509#fontello') format('svg');
+}
+
+@font-face {
+  font-family: 'Southwest-Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Light.eot');
+  src: url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Light.eot?#iefix') format('embedded-opentype'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Light.woff') format('woff'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Light.ttf') format('truetype'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Light.svg#robotolight') format('svg');
+}
+
+@font-face {
+  font-family: 'Southwest-Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Regular.eot');
+  src: url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Regular.eot?#iefix') format('embedded-opentype'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Regular.woff') format('woff'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Regular.ttf') format('truetype'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Regular.svg#robotolight') format('svg');
+}
+
+@font-face {
+  font-family: 'Southwest-Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Medium.eot');
+  src: url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Medium.eot?#iefix') format('embedded-opentype'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Medium.woff') format('woff'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Medium.ttf') format('truetype'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Medium.svg#robotolight') format('svg');
+}
+
+@font-face {
+  font-family: 'Southwest-Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Bold.eot');
+  src: url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Bold.eot?#iefix') format('embedded-opentype'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Bold.woff') format('woff'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Bold.ttf') format('truetype'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Bold.svg#robotolight') format('svg');
+}
+
+/* Italic styles */
+
+@font-face {
+  font-family: 'Southwest-Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: url('project_media/common/fonts/southwest-sans/SouthwestSansW01-LightIt.eot');
+  src: url('project_media/common/fonts/southwest-sans/SouthwestSansW01-LightIt.eot?#iefix') format('embedded-opentype'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-LightIt.woff') format('woff'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-LightIt.ttf') format('truetype'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-LightIt.svg#robotolight') format('svg');
+}
+
+@font-face {
+  font-family: 'Southwest-Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Italic.eot');
+  src: url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Italic.eot?#iefix') format('embedded-opentype'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Italic.woff') format('woff'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Italic.ttf') format('truetype'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-Italic.svg#robotolight') format('svg');
+}
+
+@font-face {
+  font-family: 'Southwest-Sans';
+  font-style: italic;
+  font-weight: 500;
+  src: url('project_media/common/fonts/southwest-sans/SouthwestSansW01-MediumIt.eot');
+  src: url('project_media/common/fonts/southwest-sans/SouthwestSansW01-MediumIt.eot?#iefix') format('embedded-opentype'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-MediumIt.woff') format('woff'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-MediumIt.ttf') format('truetype'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-MediumIt.svg#robotolight') format('svg');
+}
+
+@font-face {
+  font-family: 'Southwest-Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: url('project_media/common/fonts/southwest-sans/SouthwestSansW01-BoldItalic.eot');
+  src: url('project_media/common/fonts/southwest-sans/SouthwestSansW01-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-BoldItalic.woff') format('woff'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-BoldItalic.ttf') format('truetype'),
+  url('project_media/common/fonts/southwest-sans/SouthwestSansW01-BoldItalic.svg#robotolight') format('svg');
+}

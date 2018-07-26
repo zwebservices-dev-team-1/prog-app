@@ -1,0 +1,10 @@
+{
+	"paymentProxyUrl": "https://pacpayment.pacwisp.net",
+	"paymentProxyPort": "31417",
+	"paymentProxyCredentialUser": "pmtproxy1",
+	"credential": "pmt_api_fdstg",
+	"orderPaymentUrl": "https://api-payments.pacwisp.net",
+	"wispUrl": "https://api.pacwisp.net",
+	"accountUrl":" https://api-accounts.pacwisp.net",
+	"portalHost": "http://getconnected.southwestwifi.com"
+}

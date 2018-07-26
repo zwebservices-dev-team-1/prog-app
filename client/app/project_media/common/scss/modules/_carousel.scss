@@ -1,0 +1,63 @@
+.swa-swiper {
+  .swa-swiper-btn-nav {
+    border: 20px solid transparent;
+    box-sizing: content-box;
+    cursor: pointer;
+    height: 24px;
+    margin-top: -20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 13px;
+    z-index: 1;
+
+    .swa-swiper-arrow {
+      @include transition(all .3s ease);
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: block;
+      height: 24px;
+      width: 13px;
+    }
+  }
+
+  .swa-swiper-btn-nav-prev {
+    left: 9px;
+    margin-left: -20px;
+    right: auto;
+
+    @include bp-md {
+      left: 20px;
+    }
+
+    .swa-swiper-arrow {
+      background-image: url("project_media/common/img/icons/caret-l-w.svg");
+    }
+  }
+
+  .swa-swiper-btn-nav-next {
+    left: auto;
+    margin-right: -20px;
+    right: 9px;
+
+    @include bp-md {
+      right: 20px;
+    }
+
+    .swa-swiper-arrow {
+      background-image: url("project_media/common/img/icons/caret-w.svg");
+    }
+  }
+
+  .swa-swiper-slide {
+    position: relative;
+
+    &.swa-swiper-slide--landscape {
+      padding-bottom: 40.23vw;
+    }
+
+    &.swa-swiper-slide--portrait {
+      padding-bottom: 104.69vw;
+    }
+  }
+}

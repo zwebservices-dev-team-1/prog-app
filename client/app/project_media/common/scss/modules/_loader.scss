@@ -1,0 +1,127 @@
+/*--------------------
+$ LOADER BASE $
+--------------------*/
+.loader-container {
+  display: none;
+  bottom: 0;
+  // height: 100%;
+  left: 0;
+  min-height: 120px;
+  overflow: hidden;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  &.loader-on {
+    display: block;
+  }
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  animation: load1 1s infinite ease-in-out;
+  background-color: $swa-white;
+  height: 4em;
+  width: 1em;
+}
+
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+
+.loader:before {
+  animation-delay: -.32s;
+  left: -1.5em;
+}
+
+.loader {
+  animation-delay: -.16s;
+  bottom: 0;
+  color: $swa-white;
+  font-size: 4px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-indent: -9999em;
+  top: 0;
+  transform: translateZ(0);
+}
+
+.loader:after {
+  left: 1.5em;
+}
+
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+@include bp-sm {
+  .loader {
+    font-size: 8px;
+    margin: 50px auto;
+  }
+}
+
+/*--------------------
+$ CUSTOM COLOR THEMES $
+--------------------*/
+.loader-container-blue {
+  .loader {
+    color: $swa-blue;
+  }
+  .loader,
+  .loader:before,
+  .loader:after {
+    background-color: $swa-blue;
+  }
+}
+
+/*--------------------
+$ SIZE BASED THEMES $
+--------------------*/
+.loader-container-checkout {
+  z-index: 1;
+  position: fixed;
+  background-color: rgba(255, 255, 255, .8);
+
+  .loader {
+    margin: auto auto;
+  }
+
+  .loader,
+  .loader:before,
+  .loader:after {
+    font-size: 10px;
+  }
+}
+
+.loader-container-widget {
+  z-index: 1;
+  position: absolute;
+  min-height: 50px;
+
+  .loader {
+    margin: 20px auto;
+  }
+
+  .loader,
+  .loader:before,
+  .loader:after {
+    font-size: 5px;
+  }
+}

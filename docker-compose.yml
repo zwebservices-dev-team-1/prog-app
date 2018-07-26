@@ -1,0 +1,23 @@
+version: '3'
+services:
+    client:
+      image: client:v0.0.7
+      build:
+        context: ./client
+        dockerfile: Dockerfile
+      restart: always
+      ports:
+        - "${EXTERNAL_PORT}:80"
+        - "${EXTERNAL_PORT_SSL}:443"
+      volumes:
+        - ${CLIENT_DIST}:/usr/share/nginx/html:Z
+        - ./client/certs:/etc/nginx/certs
+      networks:
+        - front-tier
+volumes:
+  database:
+networks:
+  front-tier:
+    driver: bridge
+  back-tier:
+    driver: bridge

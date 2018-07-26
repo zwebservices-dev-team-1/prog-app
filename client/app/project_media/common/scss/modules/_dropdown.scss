@@ -1,0 +1,131 @@
+
+.dropup,
+.dropdown {
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+
+  &.dropdown-large {
+    font-size: 18px;
+  }
+
+  &.dropdown-right {
+    text-align: right;
+  }
+
+  &.dropdown-border {
+    border: 1px solid $swa-light-gray;
+
+    .dropdown-button {
+      height: 38px;
+      line-height: 40px;
+    }
+  }
+
+  &.dropdown-blue {
+    .dropdown-button {
+      color: $swa-dark-blue;
+      font-weight: 700;
+
+      i {
+        background-image: url('./project_media/common/img/icons/caret-d-b.svg');
+      }
+    }
+  }
+
+  .dropdown-button {
+    background: none;
+    border: none;
+    color: $text-color;
+    display: block;
+    height: 50px;
+    line-height: 52px;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 15px 0 15px;
+    position: relative;
+    z-index: 2;
+
+    i {
+      background: url('./project_media/common/img/icons/caret-d-g.svg') no-repeat right center;
+      background-size: 12px auto;
+      float: right;
+      height: 100%;
+      width: 25px;
+    }
+
+    &.open i {
+      background-image: url('./project_media/common/img/icons/caret-d-b.svg');
+    }
+
+    div {
+      display: inline;
+    }
+
+    .dropdown-button-text {
+      font-size: $base;
+    }
+  }
+
+  .dropwdown-list {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .3);
+    display: none;
+    min-width: 100%;
+    padding: 50px 0 0 0;
+  }
+
+  &.dropdown-border .dropwdown-list {
+    padding: 38px 0 0 0;
+  }
+
+  .open + .dropwdown-list {
+    background-color: white;
+    display: block;
+    list-style: none;
+    position: absolute;
+    top: 0px;
+    white-space: nowrap;
+    z-index: 1;
+
+    .dropdown-list-item {
+      border-top: 1px solid $swa-light-gray;
+      cursor: pointer;
+      display: block;
+    }
+
+    .dropwdown-list-item-link {
+      color: $text-color;
+      display: block;
+      padding: 10px 15px;
+    }
+
+    .dropdown-list-item-text {
+      color: $text-color;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+
+  &.dropdown-right {
+    .dropwdown-list {
+      right: 0px;
+
+      .dropwdown-list-item-link {
+        padding-left: 35px;
+        padding-right: 35px;
+      }
+    }
+  }
+
+  &.dropdown-large .dropwdown-list .dropdown-list-item {
+    border-top: 2px solid $swa-smoke-gray;
+  }
+
+}
+
+// Prevent the focus on the dropdown toggle when closing dropdowns
+.dropdown,
+.dropdown > *:focus {
+  outline: 0;
+}

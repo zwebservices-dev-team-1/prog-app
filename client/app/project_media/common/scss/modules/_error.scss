@@ -1,0 +1,15 @@
+.swa-error-container {
+  background-color: $swa-red;
+  display: none;
+  height: 70px;
+
+  &.swa-has-error {
+    display: block;
+  }
+}
+
+.swa-error-content {
+  color: $swa-white;
+  line-height: 70px;
+  padding-left: 36px;
+}

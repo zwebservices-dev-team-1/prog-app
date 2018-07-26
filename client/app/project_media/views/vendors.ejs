@@ -1,0 +1,13 @@
+<% if (vendors.length) { %>
+	<% vendors.forEach(function (vendor) { 
+		 var data = JSON.stringify(vendor);
+        
+		%>
+
+		<div class="checkout-payment-methods-list-item ">
+				<div class="checkout-payment-method <%- vendor.name %>" data-value=" <%= data %>" >
+					<div></div>
+				</div>
+			</div>
+	<% }) %>
+<% } %>	

@@ -1,0 +1,32 @@
+.h-fixed-overlay {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.h-clear-list,
+.h-clear-list li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.h-deco-none {
+  color: inherit;
+  text-decoration: inherit;
+
+  &:link,
+  &:hover {
+    color: inherit;
+    text-decoration: inherit;
+  }
+}
+
+.h-text-ellipsis {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

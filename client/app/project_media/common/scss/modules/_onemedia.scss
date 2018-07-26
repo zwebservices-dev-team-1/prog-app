@@ -1,0 +1,23 @@
+.onemedia-container {
+  margin: 20px 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+
+  @include bp-md {
+    margin: 30px 0;
+  }
+
+  .onemedia-ad {
+    margin: 0 auto;
+    width: 300px;
+
+    @include bp-md {
+      width: 724px;
+    }
+  }
+}
+
+.swa-om-banner-image {
+  max-width: 100%;
+}

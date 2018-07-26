@@ -1,0 +1,27 @@
+<div class="col-xs-12">
+	<div class="checkout-form-success">
+		<h3>Payment Successful</h3>
+		<p >Status: <%- status %></p>
+		<p >Amount: <%- curencySymbol %> <%- amount %></p>
+		<% items.forEach(function (lineItem) { %>
+			<p >Product Description: <%- lineItem.name %></p>
+		<% }) %>
+		<p >Order Number: <%- orderNumber %></p>
+	</div>
+</div>
+<div class="col-xs-12">
+	<div class="success-element">
+
+	<% if (options.retUrl) { %>
+   <a  id="portalReturn" class="swa-btn swa-btn-large swa-btn-primary" href="<%- options.retUrl %>">Return</a>
+  <% } else{ %>  
+   <a  id="portalReturn" class="swa-btn swa-btn-large swa-btn-primary" href="https://getconnected.southwestwifi.com">Return</a>
+  <% } %>
+
+		
+		<% if (options.browseBtn) { %>
+			<a id="browse" class="swa-btn swa-btn-large " href="http://google.com">Browse</a>
+		<% } %>
+	</div>
+
+</div>

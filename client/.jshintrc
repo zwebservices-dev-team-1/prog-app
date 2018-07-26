@@ -1,0 +1,13 @@
+{
+    "bitwise": true,
+    "expr": true,
+    "shadow": true,
+    "mocha": true,
+    "node": true,
+    "browser": true,
+    "globals": {
+        "$": false,
+        "THREE": false,
+        "clearInterval": false
+    }
+}

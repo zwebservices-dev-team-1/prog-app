@@ -1,0 +1,51 @@
+<div class="col-xs-12 checkout-header">
+
+	<% if (items.length) { %>
+	<h1 class="checkout-title">Checkout</h1>
+		<% items.forEach(function (lineItem) { %>
+		<%# shopping cart item array
+			"systemCode": systemCode,
+			"uid": "" + uid,
+			"sku": "" + sku,
+			"name": name,
+			"price": parseFloat(price),
+			"quantity": parseInt(quantity),
+			"authorization": authorization
+			%>
+		
+			<div class="checkout-line-item" > <!-- Repeat this -->
+				<h2 class="checkout-line-item-title"><%- lineItem.name %></h2>
+
+				<div class="checkout-line-item-total" >
+					<% if (lineItem.type == 'VOUCHER') { %><span>-</span><% } %>
+					<% if (total.currency == 'USD') { %>$<% } %><%- lineItem.price %>
+					</div>
+
+			</div>
+
+		<% }) %>
+
+	<% } %>	
+	
+</div>
+
+<div class="col-xs-12 checkout-total">
+	<strong class="checkout-total-price" >Total: <%- total.value %> <%- total.currency %></strong>
+</div>
+<div class="col-xs-12 checkout-voucher">
+	<input type="text" class="checkout-voucher-code" value="<%- voucherCode %>" id="checkoutVoucherCode" placeholder="Enter Voucher Code">
+	<button class="checkout-voucher-button swa-btn swa-btn-large" id="checkoutVoucherUpdate" >
+		<%-voucherCode ? "Applied": "Apply" %>
+	</button>
+</div>
+
+<% if (total.value <= 0) { %>
+	<div class="col-xs-12 checkout-form-paid">
+		<div class="checkout-form-paid-submit">
+			<button id="checkoutFormPaidSubmit" type="submit" class="swa-btn swa-btn-large swa-btn-primary" >
+				<span >Submit</span>
+			</button>
+
+		</div>
+	</div>
+<% } %>	

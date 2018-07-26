@@ -1,0 +1,241 @@
+/* PANA PRELOADER */
+.pana-preloader {
+  background-color: $swa-white;
+  display: none;
+}
+
+.pe-app-loading .pana-preloader {
+  display: block;
+  z-index: 2147483646;
+}
+
+/* PA */
+.pana-m-pa {
+  z-index: 2147483645;
+}
+
+/* PA STATES */
+// html.ifapi-events__pa_state--on,
+// html.ifapi-events__pa_state--on body {
+//   overflow: hidden;
+// }
+
+// html.isiOS.ifapi-events__pa_state--on,
+// html.isiOS.ifapi-events__pa_state--on body,
+// html.isiOSSDK.ifapi-events__pa_state--on,
+// html.isiOSSDK.ifapi-events__pa_state--on body,
+// html.isAndroid.ifapi-events__pa_state--on,
+// html.isAndroid.ifapi-events__pa_state--on body,
+// html.isAndroidSDK.ifapi-events__pa_state--on,
+// html.isAndroidSDK.ifapi-events__pa_state--on body {
+//   bottom: 0;
+//   left: 0;
+//   max-width: 100%; /*Fixes the page getting wider than it should be while pa is displayed. (PPE-93)*/
+//   position: fixed;
+//   right: 0;
+//   top: 0;
+// }
+
+/* General rules */
+
+body {
+  color: $text-color;
+  font-family: $southwest-sans;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+h2 {
+  color: $swa-white;
+  font-size: 52px;
+  font-weight: bold;
+}
+
+h4 {
+  color: $swa-white;
+  font-size: 20px;
+}
+
+h5 {
+  color: $swa-white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.pe-pseudo-page-wrapper {
+  margin: 0;
+  padding: 0;
+
+  & > .container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .swa-pp-title {
+    color: $swa-gray;
+    font-size: 18px;
+    height: 44px;
+    line-height: 44px;
+    margin: 0;
+    padding: 0 20px;
+    vertical-align: middle;
+
+    @include bp-md {
+      height: 50px;
+      line-height: 50px;
+    }
+  }
+
+  .swa-pp-hero {
+    height: 435px;
+    position: relative;
+    width: 100%;
+
+    @include bp-md {
+      height: 500px;
+    }
+  }
+
+  .swa-pp-hero-title-container {
+    left: 5%;
+    position: absolute;
+    top: 55%;
+    width: 60%;
+
+    @include bp-md {
+      height: 80px;
+      left: 8%;
+      top: 56%;
+    }
+  }
+
+  .swa-pp-hero-title {
+    font-size: 33px;
+    line-height: 33px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 0 20px $gray-base;
+
+    @include bp-md {
+      font-size: 52px;
+      height: 52px;
+      line-height: 52px;
+    }
+  }
+
+  .swa-pp-hero-subtitle {
+    color: $swa-white;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 13px;
+    margin: 13px 0 0;
+    padding: 0;
+    text-shadow: 0 0 10px $gray-base;
+
+    @include bp-md {
+      font-size: 20px;
+      height: 20px;
+      line-height: 20px;
+      margin-top: 0px;
+      padding-top: 10px;
+    }
+  }
+}
+
+@include bp-md {
+  #itk-wrapper {
+    padding-top: 154px;
+  }
+}
+
+
+.clearfix {
+  clear: both;
+}
+
+%swa-button {
+  border: 0;
+  border-radius: 2px;
+  font-family: $southwest-sans;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 10px;
+}
+
+.swa-button-yellow {
+  @extend %swa-button;
+
+  background: $swa-yellow;
+  color: $swa-dark-blue;
+}
+
+.swa-button-blue {
+  @extend %swa-button;
+
+  background: $swa-blue;
+  color: $swa-white;
+}
+
+.swa-button-white {
+  @extend %swa-button;
+
+  background: $swa-white;
+  color: $swa-dark-blue;
+}
+
+.swa-button-error {
+  @extend %swa-button;
+
+  background: $swa-red;
+  color: $swa-white;
+}
+
+.swa-message-error {
+  color: $swa-red;
+  font-weight: 500;
+}
+
+.swa-input {
+  background: $swa-white;
+  border: 1px solid $swa-border-gray;
+  border-radius: 2px;
+  font-family: $southwest-sans;
+  font-size: 18px;
+  padding: 5px 25px;
+}
+
+/* CUSTOM ASPECT RATIO BREAK-POINTS */
+
+.visible-landscape {
+  display: none !important;
+}
+
+@media (min-aspect-ratio: 1/1) {
+  .hidden-landscape {
+    display: none !important;
+  }
+
+  .visible-landscape {
+    display: block !important;
+  }  
+}
+
+/* Disable text select */
+
+p, a, ul, li, h1, h2, h3, h4, h5 {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
+
+  /* Disable selection/Copy of UIWebView */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input, textarea {
+  /* Exception for input areas */
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  user-select: text !important;
+}
