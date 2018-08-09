@@ -14,9 +14,11 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ResourceHintWebpackPlugin = require('resource-hints-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ZipPlugin = require('zip-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 // Try the environment variable, otherwise use root
 const ASSET_PATH = process.env.ASSET_PATH || '';
@@ -61,17 +63,20 @@ const common = {
                 }
             }
         },
+                {
+                    test: /\.(png|svg|jpg|gif|woff|eot|ttf|woff2?49710509|woff2?v=4.7.0|)$/,
+                    use: [
+                        'file-loader'
+                    ]
+                },
         {
             test: /\.css$/,
             use: ExtractTextPlugin.extract({
-                fallback: "style-loader",
-                use: "css-loader?minimize=true&localIdentName=[name]__[local]___[hash:base64:5]&sourceMap=true"
-            })
+               fallback: "style-loader",
+                use: "css-loader?minimize=true&localIdentName=[name]__[local]___[hash:base64:5]&sourceMap=true"}
+        )
         },
-        {
-            test: /\.(png|svg|jpg|gif|woff|eot|ttf|woff2?49710509|woff2?v=4.7.0|)$/,
-            use: ['file-loader']
-        },
+
         {
             test: require.resolve('./app/project_media/vendor/js/pidcrypt.min.js'),
             use: 'exports-loader?PidCrypt'
@@ -90,6 +95,8 @@ const common = {
         }
     },
     plugins: [
+        new CopyWebpackPlugin(['./sw.js']),
+        new webpack.IgnorePlugin(/^\.\/sw\.js$/),
         new webpack.optimize.CommonsChunkPlugin('common.js'),
         new ExtractTextPlugin("[name].css"),
         new webpack.ProvidePlugin({

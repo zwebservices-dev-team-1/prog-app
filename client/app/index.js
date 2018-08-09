@@ -1,12 +1,12 @@
 'use strict';
 
-import './style-sheet.css';
-import './project_media/common/scss/main.scss';
+import './styles/inline.css';
+// import './project_media/common/scss/main.scss';
 
 require('./project_media/common/js/polyfills.js')();
 
 require('./vendors.js')();
 
-var APP = require('./project_media/common/js/script.js')();
+var APP = require('./scripts/app.js')();
 
 // var Util = require("./project_media/common/js/util.js");

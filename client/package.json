@@ -1,11 +1,11 @@
 {
   "name": "ground-site-payment",
-  "version": "1.2.13",
+  "version": "1.2.15",
   "description": "Southwest: Checkout",
   "main": "app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm version patch && webpack",
+    "build": "webpack",
     "serve": "webpack-dev-server  --hot --inline"
   },
   "author": "Dean Salleyman <deansalleyman@gmail.com>",
@@ -32,6 +32,7 @@
     "babel-preset-env": "^1.6.1",
     "bootstrap-sass": "^3.3.7",
     "bower-webpack-plugin": "^0.1.9",
+    "copy-webpack-plugin": "^4.5.2",
     "css-loader": "^0.28.7",
     "ect-loader": "^1.0.0",
     "ejs-loader": "^0.3.0",
@@ -45,6 +46,7 @@
     "jshint-loader": "^0.8.3",
     "less": "^2.6.0",
     "less-loader": "^2.2.3",
+    "mini-css-extract-plugin": "^0.4.1",
     "ng-annotate-loader": "^0.1.0",
     "node-sass": "^4.6.0",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
